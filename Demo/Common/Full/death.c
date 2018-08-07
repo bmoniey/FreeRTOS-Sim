@@ -77,7 +77,7 @@ static volatile short sCreationCount = 0;
 /* Used to store the number of tasks that were originally running so the creator 
 task can tell if any of the suicidal tasks have failed to die. */
 static volatile unsigned portBASE_TYPE uxTasksRunningAtStart = 0;
-static const unsigned portBASE_TYPE uxMaxNumberOfExtraTasksRunning = 5;
+static const unsigned portBASE_TYPE uxMaxNumberOfExtraTasksRunning = 6;
 
 /* Used to store a handle to the tasks that should be killed by a suicidal task, 
 before it kills itself. */
