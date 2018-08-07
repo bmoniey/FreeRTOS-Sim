@@ -181,7 +181,11 @@ unsigned portBASE_TYPE uxTasksRunningNow;
 	{
 		sReturn = pdFALSE;
 	}
-	
+	else
+	{
+		sLastCreationCount = sCreationCount;
+	}
+
 	uxTasksRunningNow = uxTaskGetNumberOfTasks();
 
 	if( uxTasksRunningNow < uxTasksRunningAtStart )
